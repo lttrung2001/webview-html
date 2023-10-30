@@ -6,10 +6,15 @@
 </head>
 <body>
     <input id="searchBar" />
+    <button onclick="submit()">Submit</button>
     <script>
         function fillData(data) {
             document.getElementById("searchBar").value = data;
         };
+        function submit() {
+            const data = document.getElementById("searchBar").value;
+            AndroidInterface.getSearchValue(data);
+        }
     </script>
 </body>
 </html>
