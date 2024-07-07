@@ -10,6 +10,7 @@
     <script>
         function fillData(data) {
             document.getElementById("searchBar").value = data;
+            return "WebView đã nhận được data" + data;
         };
         function submit() {
             const data = document.getElementById("searchBar").value;
